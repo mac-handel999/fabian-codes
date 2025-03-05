@@ -1,0 +1,284 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    font-size: 1rem;
+    background:#020632;
+    color: #fff;
+    
+    
+}
+
+
+ 
+
+.profile {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+p {
+  text-align: center;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  padding: 10px;
+  background: #fff;
+  color: #061087;
+}
+
+.text1 {
+  color: wheat;
+  background: #0F111E;
+  padding: 4px;
+  box-shadow: 2px 1px 2px 2px wheat;
+}
+
+.text2 {
+  color: #4A0000;
+  background: wheat;
+  padding: 4px;
+  box-shadow: 1px 2px 1px 2px black;
+}
+
+.mypic {
+  border: 2px solid #020632;
+  border-radius: 50px;
+}
+
+.mypic:hover {
+  box-shadow: 2px 3px 2px 3px black;
+  transform: translateX(5px)
+}
+
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.menu {
+  margin:3px;
+  padding: 5px;
+  text-align: center;
+  background-color: #020632;
+  color: #fff;
+  border-radius: 10px;
+  
+}
+
+.selection {
+  padding: 13px;
+  background-color: #fff;
+  display:none ;
+  text-align: center;
+  border-bottom-left-radius: 66px;
+  border-bottom-right-radius: 59px;
+  border: 2px solid darkred;
+  box-shadow: 1px 2px 1px 2px black;
+
+ 
+  
+}
+
+ a {
+  text-decoration: none;
+  color:#fff;
+  background-color:#020632
+}
+
+button {
+  margin: 3px;
+  padding: 5px;
+  color: #fff;
+  background-color: #020632;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000
+  
+}
+
+#github,#projects, #contact,.web-dev,.graphics, button {
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+  border:2px solid #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#projects:hover, #github:hover, #contact:hover, .web-dev:hover,
+.graphics:hover, button:hover
+{
+  border: 2px solid skyblue;
+  background: #fff;
+  color: #000;
+}
+
+
+.copy {
+  margin: 10px 12px;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.about-me {
+  margin:19px;
+  padding: 10px;
+  
+}
+
+.aboutme-text {
+  color: #fff;
+}
+
+.aboutme-head {
+  text-align: center;
+  text-shadow: 2px 3px 2px 3px #000;
+  color: #fff;
+}
+
+#project-btn {
+  display: flex;
+  
+}
+
+.web-dev-header, .graphics-header {
+  text-align: center;
+  margin: 7px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap:10px;
+  gap: 5px;
+  column-gap: 5px;
+  
+}
+
+.icon-img {
+  text-align: center;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+}
+
+.web-dev-img, .graphics-img {
+   box-shadow: 2px 2px 3px 3px wheat  #42445A;
+}
+
+.dev-img, .design-img {
+  
+}
+
+.top {
+position: fixed;
+margin: 08px;
+left: 0px;
+right: 380px;
+bottom: 20px;
+z-index: 1000;
+border-radius: 60px;
+width: 60px;
+height: 50px;
+}
+
+ .toggle-btn {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 55px;
+    width: 60px;
+    height: 55px;
+    border: solid wheat 2px;
+    position: fixed;
+    left: 250px;
+    right: 0px;
+    bottom: 20px;
+    z-index: 1000;
+  
+  }
+  
+  .toggle-btn-img {
+    width: 45px;
+    height: 43px;
+    border-radius: 50px;
+  }
+  
+  .web-img {
+   border-radius: 5px;
+   box-shadow: 2px 2px 3px 3px #000;
+  }
+  
+  .web-img:hover {
+   border-radius: 0px;
+   box-shadow: 4px 4px 5px 5px #000;
+   transform: translateX(30px)
+
+    
+  }
+  
+  
+  .img-dev {
+    margin: 15px;
+    padding: 13px;
+    text-align: center;
+    background-color:#fff; 
+    border-radius: 10px;
+    color: #000;
+    box-shadow: 3px 3px 3px 3px black;
+    
+  }
+  
+  .img-web-dev {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .dev-text {
+    margin: 13px;
+    margin-top: 10px;
+    padding: 13px;
+    padding-top: 10px;
+    text-align: center;
+    word-wrap: wrap;
+ 
+  }
+
+
+
+
+footer {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  
+}

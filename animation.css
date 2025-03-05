@@ -1,0 +1,215 @@
+/* From Uiverse.io by MuhammadHasann */ 
+.card_container {
+  --X: 0deg;
+  --Y: 0deg;
+  --Z: 0deg;
+  --angleX: 15deg;
+  --angleY: 20deg;
+
+  position: relative;
+  margin: 20px;
+}
+
+.card_hover {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 100%;
+}
+
+.card_hover .part {
+  width: 20%;
+  height: calc(100% / 3);
+  background-color: transparent;
+}
+
+.card_container:has(.part-1:hover) {
+  --X: var(--angleX);
+  --Y: calc(var(--angleY) * -1);
+}
+.card_container:has(.part-2:hover) {
+  --X: var(--angleX);
+  --Y: calc((var(--angleY) / 2) * -1);
+}
+.card_container:has(.part-3:hover) {
+  --X: var(--angleX);
+}
+.card_container:has(.part-4:hover) {
+  --X: var(--angleX);
+  --Y: calc(var(--angleY) / 2);
+}
+.card_container:has(.part-5:hover) {
+  --X: var(--angleX);
+  --Y: var(--angleY);
+}
+.card_container:has(.part-6:hover) {
+  --Y: calc(var(--angleY) * -1);
+}
+.card_container:has(.part-7:hover) {
+  --Y: calc((var(--angleY) / 2) * -1);
+}
+.card_container:has(.part-9:hover) {
+  --Y: calc(var(--angleY) / 2);
+}
+.card_container:has(.part-10:hover) {
+  --Y: var(--angleY);
+}
+.card_container:has(.part-11:hover) {
+  --X: calc(var(--angleX) * -1);
+  --Y: calc(var(--angleY) * -1);
+}
+.card_container:has(.part-12:hover) {
+  --X: calc(var(--angleX) * -1);
+  --Y: calc((var(--angleY) / 2) * -1);
+}
+.card_container:has(.part-13:hover) {
+  --X: calc(var(--angleX) * -1);
+}
+.card_container:has(.part-14:hover) {
+  --X: calc(var(--angleX) * -1);
+  --Y: calc(var(--angleY) / 2);
+}
+.card_container:has(.part-15:hover) {
+  --X: calc(var(--angleX) * -1);
+  --Y: var(--angleY);
+}
+
+.card {
+  --light: #d9d9d9;
+  --dark: #1f1f1f;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  padding: 1.5rem;
+  width: 15rem;
+  background-color: rgb(172, 250, 233);
+  background-image: linear-gradient(
+    135deg,
+    rgba(172, 250, 233, 1) 0%,
+    rgba(213, 143, 235, 1) 50%,
+    rgba(242, 126, 241, 1) 100%
+  );
+
+  border-radius: 0.5rem;
+
+  transform-origin: center;
+  transform: rotateX(var(--X)) rotateY(var(--Y)) rotateZ(var(--Z));
+  transition: transform 0.3s ease-in-out;
+}
+
+.say-hi {
+  position: relative;
+
+  width: 100%;
+  height: 2rem;
+  background-color: transparent;
+}
+
+.icon_say-hi {
+  position: absolute;
+  bottom: 0;
+  left: -0.5rem;
+
+  width: 3rem;
+
+  opacity: 0;
+  transform-origin: 60% 90%;
+  transform: translate(-15deg);
+  filter: drop-shadow(0 0 0.5rem #2b2b2b);
+  transition: all 0.2s ease-in-out;
+}
+
+.card_container:hover .card .icon_say-hi {
+  width: 3.5rem;
+
+  opacity: 1;
+  animation: say-hi 0.35s linear infinite alternate;
+}
+
+@keyframes say-hi {
+  to {
+    transform: rotate(25deg);
+  }
+}
+
+.title {
+  overflow: clip;
+
+  width: 100%;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-transform: capitalize;
+  text-wrap: wrap;
+  text-overflow: ellipsis;
+  
+  
+}
+
+.paragraph {
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  width: 40px;
+  display:block ;
+  justify-content: space-evenly;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+ /* From Uiverse.io by Saad3092003 */ 
+.one-div {
+  margin: 20px;
+  position: relative;
+  height: 250px;
+  width: 200px;
+  background-color: rgb(15, 15, 15);
+  transform-style: preserve-3d;
+  animation: rot 2s infinite ease;
+  border-radius: 20px;
+  box-shadow: 0 0 50px 0px, inset 0 0 90px 0px;
+  color: white;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one-div .text {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.one-div:hover.one-div .text {
+  scale: 1.2;
+  opacity: 0.7;
+}
+
+.one-div:hover {
+  box-shadow: 0 0 50px 0px, inset 5px 5px 20px 0px black;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotateX(-15deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotateX(-15deg) translateY(-10px);
+  }
+
+  100% {
+    transform: rotateX(-15deg) translateY(0px);
+  }
+}
