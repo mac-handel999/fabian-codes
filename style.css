@@ -194,6 +194,16 @@ button:hover {
   
 }
 
+.design-img2 {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
 .top {
 position: fixed;
 margin: 08px;
