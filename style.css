@@ -10,8 +10,17 @@ body {
     color: #fff;
     
     
+    
 }
 
+.background {
+  background-image: url(images/code-img.jpg)
+    
+}
+
+.notice {
+  background: red;
+}
 
  
 
@@ -163,9 +172,11 @@ button:hover {
 .web-dev-header, .graphics-header {
   text-align: center;
   margin: 7px;
+  color:#fff;
 }
 
 .icons {
+  font-size: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -173,7 +184,8 @@ button:hover {
   row-gap:10px;
   gap: 5px;
   column-gap: 5px;
-  
+  text-overflow:ellipsis;
+  opacity: 1.5;
 }
 
 .icon-img {
@@ -237,12 +249,12 @@ height: 50px;
     border-radius: 50px;
   }
   
-  .web-img {
+  .web-img, .img-design {
    border-radius: 5px;
    box-shadow: 2px 2px 3px 3px #000;
   }
   
-  .web-img:hover {
+  .web-img:hover,.img-design:hover, .img-contact:hover {
    border-radius: 0px;
    box-shadow: 4px 4px 5px 5px #000;
    transform: translateX(30px)
@@ -250,6 +262,27 @@ height: 50px;
     
   }
   
+  
+  
+  .img-design:hover {
+    width: 285px;
+    height: 400px;
+  }
+  
+  
+  .img-contact {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px 3px #000;
+    background: #fff;
+  }
+  
+  .contact-text {
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+  }
   
   .img-dev {
     margin: 15px;
