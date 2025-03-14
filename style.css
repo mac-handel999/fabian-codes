@@ -15,11 +15,12 @@ body {
 
 .background {
   background-image: url(images/code-img.jpg)
+  
     
 }
 
 .notice {
-  background: red;
+  background:red;
 }
 
  
@@ -81,10 +82,16 @@ header {
   margin:3px;
   padding: 5px;
   text-align: center;
-  background-color: #020632;
-  color: #fff;
-  border-radius: 10px;
-  
+  background-color:#fff;
+  border-radius: 40px;
+  border: 1px 2px 1px solid #42445A;
+}
+
+.menu-icon {
+ width: 3px;
+ height: 4px;
+   border: 2px solid darkred;
+  box-shadow: 1px 2px 1px 2px black;
 }
 
 .selection {
@@ -282,6 +289,14 @@ height: 50px;
     padding: 2px;
     margin: 2px;
     text-align: center;
+  }
+  
+  .contact-btns {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
   }
   
   .img-dev {
