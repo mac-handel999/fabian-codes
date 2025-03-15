@@ -14,7 +14,12 @@ body {
 }
 
 .background {
-  background-image: url(images/code-img.jpg)
+  margin: 0px;
+  padding: 5px;
+  background-image: url(images/code-img.jpg);
+  background-repeat: no-repeat;
+  background-clip: center;
+  opacity: 1.5px;
   
     
 }
