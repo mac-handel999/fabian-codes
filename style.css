@@ -53,6 +53,22 @@ header {
   color: #061087;
 }
 
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.fab-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  border: 2px solid #020632
+ ;
+ box-shadow: 2px 2px 3px 3px #000;
+}
+
 .text1 {
   color: wheat;
   background: #0F111E;
@@ -189,7 +205,9 @@ button:hover {
 
 #project-btn {
   display: flex;
-  
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .web-dev-header, .graphics-header {
@@ -340,7 +358,7 @@ height: 50px;
     margin-top: 10px;
     padding: 13px;
     padding-top: 10px;
-    text-align: center;
+    text-align: left;
     word-wrap: wrap;
  
   }
