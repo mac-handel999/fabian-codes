@@ -8,7 +8,14 @@ body {
     font-size: 1rem;
     background:#020632;
     color: #fff;
-    
+    font-family: 'Georgia', 'Times New Roman', Times, serif, cursive;
+  background-image: url( images/fabian-codes-logo.png);
+  background-clip: cover;
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  color: #fff;
+backdrop-filter: opacity(100%) blur(100px) saturate(100px);
     
     
 }
